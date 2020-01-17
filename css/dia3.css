@@ -1,0 +1,14 @@
+.Activo{
+    color: blue;
+}
+
+button{
+    background-color: blue;
+    color: white;
+}
+
+#parrafo{
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid blue;
+}

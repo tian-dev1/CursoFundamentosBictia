@@ -1,0 +1,43 @@
+.enlaces{
+    margin-left: 20px;
+    color: #000000;
+    padding: 5px;
+}
+
+.enlaces:hover{
+    background-color: #0D4D4D;
+}
+
+nav{
+    background-color: #669999;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.video{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    border-style: hidden;
+
+}
+td, th{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.titulos{
+    background-color: gray;
+}
+
+tr:hover{
+    background-color: gray;
+}
+
