@@ -1,0 +1,46 @@
+
+#contenedor{
+    width: 78.125%;
+    max-width: 1000px;
+    position: relative;
+    height: 300px;
+    background-color: teal;
+    margin: 0 auto;
+}
+
+#header{
+    height: 200px;
+    background-color: thistle;
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+#content{
+    position: relative;
+    background-color: yellowgreen;
+   
+}
+
+#content #left{
+    float: left;
+    background-color: brown;
+    
+}
+
+#content #right{
+    float: right;
+    background-color: purple;
+    
+}
+
+#footer{
+    position: relative;
+    background-color: blue;
+    height: 50px;
+}
