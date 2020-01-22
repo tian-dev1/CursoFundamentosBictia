@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+.Titulo{
+    text-align: center;
+}
+#image{
+    display: block;
+    margin: 0 auto;
+}
+
+#parrafo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    padding: 3%;
+}

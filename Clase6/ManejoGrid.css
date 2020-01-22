@@ -1,0 +1,41 @@
+body{
+    background-color: #3A3A3A;
+}
+#Titulo{
+    color: white;
+}
+.container{
+    color: white;
+}
+.primera-fila{
+    margin-top: 10px;
+}
+
+.div-table{
+    padding: 20px;
+}
+
+.div-image{
+    padding: 20px;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    border-style: hidden;
+
+}
+td, th{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.titulos{
+    background-color: gray;
+}
+
+tr:hover{
+    background-color: gray;
+}
