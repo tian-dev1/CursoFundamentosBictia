@@ -1,0 +1,40 @@
+h1, h2{
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border: 10px double gray;
+}
+
+.row{
+    margin-bottom: 30px;
+}
+.botonesPeliculas{
+    color: white;
+    background-color: black;
+}
+.Ejercicio2{
+    margin-bottom: 30px;
+}
+
+.botonesTablasMultiplicar{
+    margin-right: 20px;
+    color: white;
+    background-color:  #550000;
+}
+
+.botonesTablasMultiplicar:hover{
+   
+    background-color: #801515;
+}
+
+#botonFuncionArreglada{
+    color: white;
+    background-color:   #260339; 
+}
+
+#botonFuncionArreglada:hover{
+    background-color:  #3D1255;
+}
