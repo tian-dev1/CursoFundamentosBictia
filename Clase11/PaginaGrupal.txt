@@ -1,0 +1,9 @@
+Inicio 
+Proximos estrenos 
+Todas las pelis 
+Contactenos 
+Inicio de sesión 
+Cerrar 
+
+//
+Menu Body Footer
