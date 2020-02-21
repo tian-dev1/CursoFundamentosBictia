@@ -7,3 +7,6 @@ Cerrar
 
 //
 Menu Body Footer
+
+
+Cambiar textos

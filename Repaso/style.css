@@ -1,0 +1,49 @@
+.align-boxes {
+    width: 50%;
+    margin: auto;
+    border: 5px solid #499bd8;
+}
+
+.title-game {
+    text-align: center;
+}
+
+.btn-cool {
+    width: 150px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.number-game {
+    text-align: center;
+    margin: 10px 45% 10px 45%;
+    font-size: 30px;
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td div {
+    margin: auto;
+}
+
+.box,
+.box-2 {
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    border: 5px solid black;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.box:hover,
+.box-2:hover {
+    transform: rotate(45deg);
+}

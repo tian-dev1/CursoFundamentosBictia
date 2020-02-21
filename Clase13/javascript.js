@@ -1,11 +1,3 @@
-function cambiarTituloPelicula(id, contenido){
-    document.getElementById(id).innerHTML=contenido 
-    var elemento = document.getElementById(id)
-
-    elemento.style.color = "red"
-    elemento.style.backgroundColor = 'black'
-}
-
 function iniciarSesion(){
     swal("Write something here:", {
         content: "input",
@@ -18,11 +10,11 @@ function iniciarSesion(){
         document.getElementById("cerrarSesion").style.display = "block"
         document.getElementById("usuario").style.display = "block"
         document.getElementById("iniciarSesion").style.display = "none"
-    })
+      })
 }
 
 
- var usuario = localStorage.getItem('nombreUsuario')
+var usuario = localStorage.getItem('nombreUsuario')
 
 
 
@@ -33,6 +25,7 @@ if (usuario != null){
 }else{
     console.log("No has iniciado sesión")
 }
+
 
 
 function cerrarSesion(){

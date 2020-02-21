@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        /* 
+        var fisrtName = 'Andrea'; //Camell 
+        var fisrt_name = 'Rodrigo'; //Snake
+        var first-name = 'Lorena'; //Kebab
+        var Fisrtname = 'Ricardo'; //Capital
+        */
+        // var operacion = prompt('Ingrese el valor de numero:');
+        // var number_1 = prompt('Ingrese el valor de numero:');
+        // var number_2 = prompt('Ingrese el valor de numero:'); 
+        // var d = Number(prompt('Prueba Number'));
+
+        // number_1 = Number(number_1);
+        // number_2 = Number(number_2);
+        // console.log(d)
+        // // console.log(number_1, number_2)
+        // if( operacion == 1){
+        //     console.log("El resultado de la suma es: " + (number_1 + number_2));
+        // } else if (operacion ==2){
+        //     console.log("El resultado de la resta es: " + (number_1 - number_2));
+        // } else if (operacion ==3){
+        //     console.log("El resultado de la multiplicación es: " + (number_1 * number_2));
+        // } else if (operacion == 4){
+        //     if(number_2 == 0 || number_1 == 0){
+        //         console.log('¿Estas loco no puedo dividir en 0?')
+        //     } else{
+        //         console.log("El resultado de la división es: " + number_1 / number_2)
+        //     }
+        // }else{
+        //     console.log('No se como seguir en este computador')
+        // }
+
+
+
+
+        // var operacion = Number(prompt('Ingrese el valor de numero: '));
+        // var number_1 = Number(prompt('Ingrese el valor de numero: '));
+        // var number_2 = Number(prompt('Ingrese el valor de numero: '));     
+
+        // function operaciones(operacion, number_1, number_2){
+        //     switch (operacion) {
+        //     case 1:
+        //         console.log("El resultado de la suma es: " + (number_1 + number_2));
+        //         break;
+        //     case 2:
+        //         //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor2
+        //         console.log("El resultado de la resta es: " + (number_1 - number_2));
+        //         break;
+        //     case 3:
+        //         console.log("El resultado de la multiplicación es: " + (number_1 * number_2));
+        //         break;
+        //     case 4:
+        //         console.log("El resultado de la división es: " + number_1 / number_2);
+        //         break;
+        //     case 5:
+        //         console.log("El resultado de la raiz cuadra es: " + Math.sqrt(number_1) + " y " + Math.sqrt(number_2));
+        //         break;
+        //     case 6:
+        //         console.log("El resultado de la potencia es: " + Math.pow(number_1, number_2));
+        //         break;
+        //     default:
+        //         console.log('No puedo operar :( ');
+        //         break;
+        // }
+
+        // }
+        // operaciones(operacion, number_1, number_2);
+
+
+        // function abc() {
+        //     var i = 0
+        //     console.log(i);
+        //     for (; i <= 10; i++) {
+        //         console.log(i)
+        //     }
+        // } 
+        //b++ = b=b+1 (Modifica)
+        //b+1 = b+1 (No modifica)
+        //b +=1  b+1 (Modifica)
+        //console.log(i);
+
+
+
+            //var i = 0
+
+            // for (i = 10; i > 0; i--) {
+            //     console.log(i)
+            // }
+
+            // for(var numb= 3; numb<=10; numb++){
+            //     if(numb % numb != 0){
+            //         console.log(numb)
+            //     }
+            // }
+
+            var s = "Hola Mundosavct";
+
+            for(var numb=0 ; numb< s.length; numb++){
+                console.log(s[numb]);
+            }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="col-12">
+        <div>
+            <div class="col-sm-4 children1"></div>
+            <div class="col-sm-4 children2"></div>
+            <div class="col-sm-4 children3"></div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col children1"></div>
+            <div class="col children2"></div>
+            <div class="col children3">
+                <p id="resultado1">resultado1</p>
+                <p id="resultado2">resultado2</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .col-12 {
+            background-color: blue;
+            padding: 15px;
+        }
+
+        .container {
+            background-color: green;
+            padding: 15px;
+        }
+
+        .children1 {
+            background: brown;
+            padding: 10px;
+        }
+
+        .children2 {
+            background: yellow;
+            padding: 10px;
+        }
+
+        .children3 {
+            background: blueviolet;
+            padding: 10px;
+        }
+    </style>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

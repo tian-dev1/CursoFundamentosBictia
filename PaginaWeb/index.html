@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logosIconos/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Geek Kingdom</title>
+</head>
+
+<body>
+
+
+  <!-- Agregar JS para login 
+  Agregar enunciado de contactenos
+  Agregar info productos en el accordion desde JS, Botones y caracteristicas
+  Agregar footer responsive texto y agregar links
+  favicon
+  registro -->
+
+
+  <!-- TODO LO RELACIONADO CON EL HEADER -->
+  <div class="container">
+    <header class="header">
+      <div class="navbarInicial">
+        <figure class="logo">
+          <img src="./img/logosIconos//kingdomGeek4.png" height="50px" alt="Logo Black Geek Kingdom">
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a id="userNameItem" class="link" href="#"> </a>
+            </li>
+            <li>
+              <a id="signOutItem" class="link" href="#"> SignOut</a>
+            </li>
+            <li>
+              <a id="signInItem" class="link" href="#" data-toggle="modal" data-target="#modalSignIn"> SignIn </a>
+            </li>
+            <li>
+              <a id="registerItem" class="link" href="#" data-toggle="modal" data-target="#modalRegister"> Register </a>
+            </li>
+            <li>
+              <a class="link" href="#contact">ContactUs</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+
+
+<!-- Modal para el registro -->
+<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRegisterLabel">Register users</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="register" >
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+          <div>
+            <label for="lastName">LastName: </label>
+            <input type="text" id="lastName" required placeholder="Enter your last name">
+          </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+          <div>
+            <label for="userName">User name: </label>
+            <input type="text" id="nameUser" placeholder="Enter your user name">
+          </div>
+          <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" placeholder="Enter your password">
+          </div>
+         
+        </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"  data-dismiss="modal" onclick="register()">check in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para el ingreso -->
+<div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRegisterLabel">Entrance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="register" >
+          <div>
+            <label for="userName">User name: </label>
+            <input type="text" id="userName" placeholder="Enter your user name">
+          </div>
+          <div>
+            <label for="password">Password: </label>
+            <input type="password" id="passwordUser" placeholder="Enter your password">
+          </div>
+         
+        </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"  data-dismiss="modal" onclick="signIn('userName','passwordUser')"> Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- JUMBOTRON-->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello welcome Geek Kingdom!</h1>
+      <p class="lead">Geek Kingdom is a geek store specializing in products for geeks and muggles.</p>
+      <p class="lead">Our store has a wide variety of products such as comics, toys, shirts and
+                Various types of entertainment.</p>
+      <p class="lead">Without further opening, we hope you enjoy your adventure in Geek Kingdom.</p>
+      <hr class="my-4">
+    </div>
+   
+
+    <!-- TODO LO RELACIONADO CON CRROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://www.youtube.com/user/ComicGameMexico" target="_blank"><img src="./img/carrousel/banner3.jpg" height="300" class="d-block w-100 bannerComics" alt="Banner Comics"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.youtube.com/user/TheRelaxingEnd" target="_blank"><img src="./img/carrousel/banner1.jpg" height="300" class="d-block w-100 bannerAnime" alt="Banner Anime"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.youtube.com/user/ComicGameMexico" target="_blank"></a><img src="./img/carrousel/banner5.jpg" height="300" class="d-block w-100 bannerProducts" alt="Banner Productos"></a>y
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+
+    <!-- TODO LO RELACIONADO CON EL NAV DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"> Home </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#headingOne"> Offers </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#headingTwo"> Collector </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#headingThree"> Clothing Geek </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#headingFour"> Books </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#headingFive"> Entertainment </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="accordion" id="accordion">
+
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Offers
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Manejo de card desde JS -->
+            <div id="cardGroupOffers" class="card-group">
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Collector
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Manejo de card desde JS -->
+            <div id="cardGroupCollector" class="card-group">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Clothing Geek
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Manejo de card desde JS -->
+            <div id="cardGroupClothingGeek" class="card-group">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              Books
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Manejo de card desde JS -->
+            <div id="cardGroupBooks" class="card-group">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+              aria-expanded="false" aria-controls="collapseFive">
+              Entertainment
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Manejo de card desde JS -->
+            <div id="cardGroupEntertainment" class="card-group">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- accordion -->
+    </div>
+
+
+
+
+
+
+
+    <!-- container -->
+  </div>
+
+
+
+  <section id="contact" class="contact">
+    <div class="Mycontainer">
+      <div class="container">
+        <div class="row ">
+          <div class="col-7" style="padding: 10px;">
+            <p><img src="./img/logosIconos/web.png" width="20px" alt="Logo White Geek Kingdom">  Online customer service hours: Monday to Friday 7:30 a.m. to 2:45 p.m. </p>
+            <p><img src="./img/logosIconos/home.png" width="20px" alt="Logo White Geek Kingdom">  Store Address: 251 E Huron St, Chicago, IL 60611, United States</p>
+            <p><img src="./img/logosIconos/time.png" width="20px" alt="Logo White Geek Kingdom">  From Monday to Saturday 10:00 a.m. to 2:00 p.m. / 4:30 p.m. to 8:30 p.m. </p>
+           
+              
+            <p><img src="./img/logosIconos/phone.png" width="20px" alt="Logo White Geek Kingdom"> +13126817074  //  +13127660314 </p>
+            <p><img src="./img/logosIconos/email.png" width="20px" alt="Logo White Geek Kingdom"> tiancamilo59@gmail.com </p>
+          </div>
+          <div class="col-5">
+            <div class="social">
+              <a href="https://www.facebook.com/" target="_blank" class="social-link facebook"></a>
+              <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="social-link instagram"></a>
+              <a href="https://twitter.com/" target="_blank" class="social-link twitter"></a>
+              <a href="https://web.whatsapp.com/" target="_blank" class="social-link whatsapp"></a>
+              <a href="https://github.com/tiancamilo01" target="_blank" class="social-link github"></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-7">
+            <p><img src="./img/logosIconos/kingdomGeek5.png" width="100px" alt="Logo White Geek Kingdom">  &nbsp; ©2020 Cristian Camilo Arevalo Perdomo </p>
+        
+          </div>
+          <div class="col-5">
+            <p>Designed with <3 by <a href="https://github.com/tiancamilo01">@tiancamilo01</a></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <footer class="footer">
+  <div id="contacto" class="contact">
+    <div class="row rowE">
+        <div class="col">
+            <p>Horario atención al cliente online:
+              De Lunes a Viernes 
+              7:30 a 14:45 <br>
+              
+              
+              Horario tienda física Alicante
+              Calle Serrano, 11 / CP 03003 <br>
+              De Lunes a Sábado 
+              10:00 a 14:00 / 16:30 a 20:30
+              Teléfono 635042044</p>
+            </div>
+        <div class="col social">
+            <a href="#" class="social-link facebook"></a>
+            <a href="#" class="social-link instagram"></a>
+            <a href="#" class="social-link twitter"></a>
+            <a href="#" class="social-link whatsapp"></a>
+            <a href="#" class="social-link github"></a>
+            
+        </div>
+    </div>
+
+  </div>
+
+  <div id="contacto" class="contact">
+    <div class="row containerFooter">
+        <div class="col">
+            <p><img src="./img/kingdomGeek5.png" width="100px" alt="Logo White Geek Kingdom">  &nbsp; ©2020 Cristian Camilo Arevalo Perdomo </p>
+        </div>
+        <div class="col">
+            <p>Designed with <3 by <a href="#">@loquesea</a></p>
+        </div>
+    </div>
+  </div>
+  </footer> -->
+
+
+
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./javascript.js"></script>
+
+</html>
